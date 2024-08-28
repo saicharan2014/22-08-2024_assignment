@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(205, 85, 85); 
+height: 100vh;
+}
+
+nav {
+  height:10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(57, 54, 54);
+}
+nav h1 {
+  color: white;
+}
+
+#img1 {
+  max-height: 300px;
+  max-width: 300px;
+  margin: 1em;
+
+  transition-duration: 2s;
+  transition-property: all;
+  transition-timing-function: ease-in-out;
+  transition-delay: 2s;
+}
+#img2 {
+  height: 70%;
+  width: 70%;
+  margin: 2rem;
+  transition-duration: 2s;
+  transition-property: all;
+  transition-timing-function: ease-in-out;
+  transition-delay: 2s;
+}
+.scale_prop:hover img {
+  transform: scale(1.1);
+}
+main{
+  margin: 20px;
+  min-height:70%;
+}
+
+section {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+gap: 1rem;
+}
+footer {
+  min-height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(57, 54, 54);
+}
+.rotate_prop {
+  border: 2px solid rgb(57, 54, 54);
+  width: 50vw;
+  height: 60vh;
+  
+  margin-left: 5rem;
+
+  transition-duration: 2s;
+  transition-property: all;
+  transition-timing-function: ease-in-out;
+  transition-delay: 2s;
+}
+.rotate_prop:hover {
+  transform: rotate(20deg);
+  background-color: aqua;
+}
+.rotate_prop:hover img {
+  border-radius: 50%;
+  transform: translateX(300px);
+}
+
+.rotate_prop h5 {
+  margin: 1em;
+}
+.scale_prop {
+  border: 2px solid rgb(57, 54, 54);
+  height: 60vh;
+  width: 50vh;
+  margin-left: 8rem;
+ 
+  transition-duration: 2s;
+  transition-property: all;
+  transition-timing-function: ease-in-out;
+  transition-delay: 2s;
+}
+.scale_prop h5 {
+  margin: 1rem;
+}
+.scale_prop:hover {
+  transform: scale(1.1);
+  background-color: cadetblue;
+}
+.skew_prop {
+  border: 2px solid rgb(57, 54, 54);
+  height: 15vh; 
+   width: 40vw;
+  margin-left: 10px;
+  transition-duration: 2s;
+  transition-property: all;
+  transition-timing-function: ease-in-out;
+  transition-delay: 2s;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+.skew_prop:hover {
+  transform: skew(30deg);
+  opacity: 0.5;
+}
+
+.translate_prop {
+  border: 2px solid rgb(57, 54, 54);
+  height: 15vh;
+  width: 40vw;
+  margin-right: 10px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  transition-duration: 2s;
+  transition-property: all;
+  transition-timing-function: ease-in-out;
+  transition-delay: 2s;
+}
+.translate_prop:hover {
+  transform: translateX(50px);
+  color: blue;
+}
